@@ -1,0 +1,9 @@
+---
+- name: Shutting down the system. 
+  hosts: all
+  tasks:
+    - name: Going to shutdown the system
+      ansible.builtin.command:
+        init 0
+
+
