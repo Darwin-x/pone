@@ -1,0 +1,7 @@
+---
+- name: Check the ping state of all hosts
+  hosts: nodes
+  tasks:
+    - name: Pinging the hosts
+      ansible.builtin.ping:
+      
