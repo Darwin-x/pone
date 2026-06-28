@@ -1,0 +1,12 @@
+---
+- name: Displaying the facts
+  hosts: nodes
+  tasks:
+    - name: Program to displaying the fact
+      ansible.builtin.debug:
+        var: ansible_facts
+
+    - name: Dispaying actual facts
+      ansible.builtin.debug:
+        msg: ansible_facts
+
